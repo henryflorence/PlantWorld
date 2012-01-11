@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA776F8E14BE4AA5008E190F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA776F8D14BE4AA5008E190F /* UIKit.framework */; };
+		BA776F9014BE4AA5008E190F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA776F8F14BE4AA5008E190F /* Foundation.framework */; };
+		BA776F9214BE4AA5008E190F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA776F9114BE4AA5008E190F /* CoreGraphics.framework */; };
+		BA776F9814BE4AA5008E190F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA776F9614BE4AA5008E190F /* InfoPlist.strings */; };
+		BA776F9A14BE4AA5008E190F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA776F9914BE4AA5008E190F /* main.m */; };
+		BA776F9E14BE4AA5008E190F /* PlantWorldAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA776F9D14BE4AA5008E190F /* PlantWorldAppDelegate.m */; };
+		BA776FA114BE4AA5008E190F /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA776F9F14BE4AA5008E190F /* MainStoryboard_iPhone.storyboard */; };
+		BA776FA414BE4AA5008E190F /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA776FA214BE4AA5008E190F /* MainStoryboard_iPad.storyboard */; };
+		BA776FA714BE4AA5008E190F /* PlantWorldMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA776FA614BE4AA5008E190F /* PlantWorldMainViewController.m */; };
+		BA776FAA14BE4AA5008E190F /* PlantWorldFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA776FA914BE4AA5008E190F /* PlantWorldFlipsideViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BA776F8914BE4AA5008E190F /* PlantWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA776F8D14BE4AA5008E190F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BA776F8F14BE4AA5008E190F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BA776F9114BE4AA5008E190F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BA776F9514BE4AA5008E190F /* PlantWorld-Info.plist */ = {isa = PBXFileReference; path = "PlantWorld-Info.plist"; sourceTree = "<group>"; };
+		BA776F9714BE4AA5008E190F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BA776F9914BE4AA5008E190F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA776F9B14BE4AA5008E190F /* PlantWorld-Prefix.pch */ = {isa = PBXFileReference; path = "PlantWorld-Prefix.pch"; sourceTree = "<group>"; };
+		BA776F9C14BE4AA5008E190F /* PlantWorldAppDelegate.h */ = {isa = PBXFileReference; path = PlantWorldAppDelegate.h; sourceTree = "<group>"; };
+		BA776F9D14BE4AA5008E190F /* PlantWorldAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlantWorldAppDelegate.m; sourceTree = "<group>"; };
+		BA776FA014BE4AA5008E190F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		BA776FA314BE4AA5008E190F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		BA776FA514BE4AA5008E190F /* PlantWorldMainViewController.h */ = {isa = PBXFileReference; path = PlantWorldMainViewController.h; sourceTree = "<group>"; };
+		BA776FA614BE4AA5008E190F /* PlantWorldMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlantWorldMainViewController.m; sourceTree = "<group>"; };
+		BA776FA814BE4AA5008E190F /* PlantWorldFlipsideViewController.h */ = {isa = PBXFileReference; path = PlantWorldFlipsideViewController.h; sourceTree = "<group>"; };
+		BA776FA914BE4AA5008E190F /* PlantWorldFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlantWorldFlipsideViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA776F8614BE4AA5008E190F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA776F8E14BE4AA5008E190F /* UIKit.framework in Frameworks */,
+				BA776F9014BE4AA5008E190F /* Foundation.framework in Frameworks */,
+				BA776F9214BE4AA5008E190F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA776F7E14BE4AA5008E190F = {
+			isa = PBXGroup;
+			children = (
+				BA776F9314BE4AA5008E190F /* PlantWorld */,
+				BA776F8C14BE4AA5008E190F /* Frameworks */,
+				BA776F8A14BE4AA5008E190F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA776F8A14BE4AA5008E190F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA776F8914BE4AA5008E190F /* PlantWorld.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA776F8C14BE4AA5008E190F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA776F8D14BE4AA5008E190F /* UIKit.framework */,
+				BA776F8F14BE4AA5008E190F /* Foundation.framework */,
+				BA776F9114BE4AA5008E190F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA776F9314BE4AA5008E190F /* PlantWorld */ = {
+			isa = PBXGroup;
+			children = (
+				BA776F9C14BE4AA5008E190F /* PlantWorldAppDelegate.h */,
+				BA776F9D14BE4AA5008E190F /* PlantWorldAppDelegate.m */,
+				BA776F9F14BE4AA5008E190F /* MainStoryboard_iPhone.storyboard */,
+				BA776FA214BE4AA5008E190F /* MainStoryboard_iPad.storyboard */,
+				BA776FA514BE4AA5008E190F /* PlantWorldMainViewController.h */,
+				BA776FA614BE4AA5008E190F /* PlantWorldMainViewController.m */,
+				BA776FA814BE4AA5008E190F /* PlantWorldFlipsideViewController.h */,
+				BA776FA914BE4AA5008E190F /* PlantWorldFlipsideViewController.m */,
+				BA776F9414BE4AA5008E190F /* Supporting Files */,
+			);
+			path = PlantWorld;
+			sourceTree = "<group>";
+		};
+		BA776F9414BE4AA5008E190F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA776F9514BE4AA5008E190F /* PlantWorld-Info.plist */,
+				BA776F9614BE4AA5008E190F /* InfoPlist.strings */,
+				BA776F9914BE4AA5008E190F /* main.m */,
+				BA776F9B14BE4AA5008E190F /* PlantWorld-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA776F8814BE4AA5008E190F /* PlantWorld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA776FAD14BE4AA5008E190F /* Build configuration list for PBXNativeTarget "PlantWorld" */;
+			buildPhases = (
+				BA776F8514BE4AA5008E190F /* Sources */,
+				BA776F8614BE4AA5008E190F /* Frameworks */,
+				BA776F8714BE4AA5008E190F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlantWorld;
+			productName = PlantWorld;
+			productReference = BA776F8914BE4AA5008E190F /* PlantWorld.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA776F8014BE4AA5008E190F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = BA776F8314BE4AA5008E190F /* Build configuration list for PBXProject "PlantWorld" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BA776F7E14BE4AA5008E190F;
+			productRefGroup = BA776F8A14BE4AA5008E190F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA776F8814BE4AA5008E190F /* PlantWorld */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA776F8714BE4AA5008E190F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA776F9814BE4AA5008E190F /* InfoPlist.strings in Resources */,
+				BA776FA114BE4AA5008E190F /* MainStoryboard_iPhone.storyboard in Resources */,
+				BA776FA414BE4AA5008E190F /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA776F8514BE4AA5008E190F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA776F9A14BE4AA5008E190F /* main.m in Sources */,
+				BA776F9E14BE4AA5008E190F /* PlantWorldAppDelegate.m in Sources */,
+				BA776FA714BE4AA5008E190F /* PlantWorldMainViewController.m in Sources */,
+				BA776FAA14BE4AA5008E190F /* PlantWorldFlipsideViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BA776F9614BE4AA5008E190F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA776F9714BE4AA5008E190F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BA776F9F14BE4AA5008E190F /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA776FA014BE4AA5008E190F /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		BA776FA214BE4AA5008E190F /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA776FA314BE4AA5008E190F /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA776FAB14BE4AA5008E190F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA776FAC14BE4AA5008E190F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA776FAE14BE4AA5008E190F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlantWorld/PlantWorld-Prefix.pch";
+				INFOPLIST_FILE = "PlantWorld/PlantWorld-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BA776FAF14BE4AA5008E190F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlantWorld/PlantWorld-Prefix.pch";
+				INFOPLIST_FILE = "PlantWorld/PlantWorld-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA776F8314BE4AA5008E190F /* Build configuration list for PBXProject "PlantWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA776FAB14BE4AA5008E190F /* Debug */,
+				BA776FAC14BE4AA5008E190F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA776FAD14BE4AA5008E190F /* Build configuration list for PBXNativeTarget "PlantWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA776FAE14BE4AA5008E190F /* Debug */,
+				BA776FAF14BE4AA5008E190F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA776F8014BE4AA5008E190F /* Project object */;
+}
