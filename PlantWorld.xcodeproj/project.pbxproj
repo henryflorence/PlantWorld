@@ -17,6 +17,11 @@
 		BA776FA414BE4AA5008E190F /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA776FA214BE4AA5008E190F /* MainStoryboard_iPad.storyboard */; };
 		BA776FA714BE4AA5008E190F /* PlantWorldMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA776FA614BE4AA5008E190F /* PlantWorldMainViewController.m */; };
 		BA776FAA14BE4AA5008E190F /* PlantWorldFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA776FA914BE4AA5008E190F /* PlantWorldFlipsideViewController.m */; };
+		BA776FB114BE4B9B008E190F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA776FB014BE4B9B008E190F /* OpenGLES.framework */; };
+		BA776FB314BE4BA4008E190F /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA776FB214BE4BA4008E190F /* GLKit.framework */; };
+		BA776FFE14BF8290008E190F /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = BA776FFD14BF8290008E190F /* Shader.vsh */; };
+		BA77700014BF82B6008E190F /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = BA776FFF14BF82B6008E190F /* Shader.fsh */; };
+		BA90A80914C370C9002CEF47 /* Plant.m in Sources */ = {isa = PBXBuildFile; fileRef = BA90A80814C370C9002CEF47 /* Plant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,18 +29,24 @@
 		BA776F8D14BE4AA5008E190F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BA776F8F14BE4AA5008E190F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BA776F9114BE4AA5008E190F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		BA776F9514BE4AA5008E190F /* PlantWorld-Info.plist */ = {isa = PBXFileReference; path = "PlantWorld-Info.plist"; sourceTree = "<group>"; };
+		BA776F9514BE4AA5008E190F /* PlantWorld-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlantWorld-Info.plist"; sourceTree = "<group>"; };
 		BA776F9714BE4AA5008E190F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BA776F9914BE4AA5008E190F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BA776F9B14BE4AA5008E190F /* PlantWorld-Prefix.pch */ = {isa = PBXFileReference; path = "PlantWorld-Prefix.pch"; sourceTree = "<group>"; };
-		BA776F9C14BE4AA5008E190F /* PlantWorldAppDelegate.h */ = {isa = PBXFileReference; path = PlantWorldAppDelegate.h; sourceTree = "<group>"; };
+		BA776F9B14BE4AA5008E190F /* PlantWorld-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlantWorld-Prefix.pch"; sourceTree = "<group>"; };
+		BA776F9C14BE4AA5008E190F /* PlantWorldAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlantWorldAppDelegate.h; sourceTree = "<group>"; };
 		BA776F9D14BE4AA5008E190F /* PlantWorldAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlantWorldAppDelegate.m; sourceTree = "<group>"; };
 		BA776FA014BE4AA5008E190F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		BA776FA314BE4AA5008E190F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		BA776FA514BE4AA5008E190F /* PlantWorldMainViewController.h */ = {isa = PBXFileReference; path = PlantWorldMainViewController.h; sourceTree = "<group>"; };
+		BA776FA514BE4AA5008E190F /* PlantWorldMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlantWorldMainViewController.h; sourceTree = "<group>"; };
 		BA776FA614BE4AA5008E190F /* PlantWorldMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlantWorldMainViewController.m; sourceTree = "<group>"; };
-		BA776FA814BE4AA5008E190F /* PlantWorldFlipsideViewController.h */ = {isa = PBXFileReference; path = PlantWorldFlipsideViewController.h; sourceTree = "<group>"; };
+		BA776FA814BE4AA5008E190F /* PlantWorldFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlantWorldFlipsideViewController.h; sourceTree = "<group>"; };
 		BA776FA914BE4AA5008E190F /* PlantWorldFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlantWorldFlipsideViewController.m; sourceTree = "<group>"; };
+		BA776FB014BE4B9B008E190F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		BA776FB214BE4BA4008E190F /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		BA776FFD14BF8290008E190F /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
+		BA776FFF14BF82B6008E190F /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
+		BA90A80714C370C9002CEF47 /* Plant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plant.h; sourceTree = "<group>"; };
+		BA90A80814C370C9002CEF47 /* Plant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plant.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA776FB314BE4BA4008E190F /* GLKit.framework in Frameworks */,
+				BA776FB114BE4B9B008E190F /* OpenGLES.framework in Frameworks */,
 				BA776F8E14BE4AA5008E190F /* UIKit.framework in Frameworks */,
 				BA776F9014BE4AA5008E190F /* Foundation.framework in Frameworks */,
 				BA776F9214BE4AA5008E190F /* CoreGraphics.framework in Frameworks */,
@@ -55,6 +68,8 @@
 		BA776F7E14BE4AA5008E190F = {
 			isa = PBXGroup;
 			children = (
+				BA776FB214BE4BA4008E190F /* GLKit.framework */,
+				BA776FB014BE4B9B008E190F /* OpenGLES.framework */,
 				BA776F9314BE4AA5008E190F /* PlantWorld */,
 				BA776F8C14BE4AA5008E190F /* Frameworks */,
 				BA776F8A14BE4AA5008E190F /* Products */,
@@ -82,6 +97,8 @@
 		BA776F9314BE4AA5008E190F /* PlantWorld */ = {
 			isa = PBXGroup;
 			children = (
+				BA776FFF14BF82B6008E190F /* Shader.fsh */,
+				BA776FFD14BF8290008E190F /* Shader.vsh */,
 				BA776F9C14BE4AA5008E190F /* PlantWorldAppDelegate.h */,
 				BA776F9D14BE4AA5008E190F /* PlantWorldAppDelegate.m */,
 				BA776F9F14BE4AA5008E190F /* MainStoryboard_iPhone.storyboard */,
@@ -91,6 +108,8 @@
 				BA776FA814BE4AA5008E190F /* PlantWorldFlipsideViewController.h */,
 				BA776FA914BE4AA5008E190F /* PlantWorldFlipsideViewController.m */,
 				BA776F9414BE4AA5008E190F /* Supporting Files */,
+				BA90A80714C370C9002CEF47 /* Plant.h */,
+				BA90A80814C370C9002CEF47 /* Plant.m */,
 			);
 			path = PlantWorld;
 			sourceTree = "<group>";
@@ -156,6 +175,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA776FFE14BF8290008E190F /* Shader.vsh in Resources */,
+				BA77700014BF82B6008E190F /* Shader.fsh in Resources */,
 				BA776F9814BE4AA5008E190F /* InfoPlist.strings in Resources */,
 				BA776FA114BE4AA5008E190F /* MainStoryboard_iPhone.storyboard in Resources */,
 				BA776FA414BE4AA5008E190F /* MainStoryboard_iPad.storyboard in Resources */,
@@ -173,6 +194,7 @@
 				BA776F9E14BE4AA5008E190F /* PlantWorldAppDelegate.m in Sources */,
 				BA776FA714BE4AA5008E190F /* PlantWorldMainViewController.m in Sources */,
 				BA776FAA14BE4AA5008E190F /* PlantWorldFlipsideViewController.m in Sources */,
+				BA90A80914C370C9002CEF47 /* Plant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +316,7 @@
 				BA776FAF14BE4AA5008E190F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

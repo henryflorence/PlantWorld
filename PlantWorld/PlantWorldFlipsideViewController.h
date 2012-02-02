@@ -12,12 +12,25 @@
 
 @protocol PlantWorldFlipsideViewControllerDelegate
 - (void)flipsideViewControllerDidFinish:(PlantWorldFlipsideViewController *)controller;
+- (void)alterSubdivision:(int)subdivision;
+- (int)getSubdivision;
+- (int*)getGenome;
+- (void)setGenomeElement:(int)index value:(int)value;
 @end
 
-@interface PlantWorldFlipsideViewController : UIViewController
+@interface PlantWorldFlipsideViewController : UIViewController {
+    IBOutlet UILabel *noOfCells;
+    IBOutlet UISlider *subdivisionSlider;
+    IBOutlet UISegmentedControl *genome;
+}
 
 @property (weak, nonatomic) IBOutlet id <PlantWorldFlipsideViewControllerDelegate> delegate;
+@property (nonatomic, retain) UISlider *subdivisionSlider;
+@property (nonatomic, retain) UILabel *noOfCells;
+@property (nonatomic, retain) UISegmentedControl *genome;
 
 - (IBAction)done:(id)sender;
+- (IBAction)setSubdivision:(id)sender;
+- (IBAction)updateGenome:(id)sender;
 
 @end

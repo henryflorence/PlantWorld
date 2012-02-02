@@ -11,7 +11,32 @@
 @implementation PlantWorldFlipsideViewController
 
 @synthesize delegate = _delegate;
+@synthesize noOfCells;
+@synthesize subdivisionSlider;
+@synthesize genome;
 
+-(IBAction)updateGenome:(id)sender {
+    int clickedSegment = [genome selectedSegmentIndex];
+    NSString *title = [genome titleForSegmentAtIndex:clickedSegment];
+    int value = 1;
+    
+    if([title isEqualToString:@"1"]) { 
+        title = @"s";
+        value = 2;
+    } else if([title isEqualToString:@"s"]) {
+        title = @"0";
+        value = 0;
+    } else title = @"1";
+    
+    [genome setTitle:title forSegmentAtIndex:clickedSegment];
+    
+    [_delegate setGenomeElement:clickedSegment value:value];
+}
+- (void)setSubdivision:(id)sender {
+    int value = (int)subdivisionSlider.value;
+    noOfCells.text = [[NSString alloc] initWithFormat:@"%i",20 * (int)pow(4,value)];
+    [_delegate alterSubdivision:value];
+}
 - (void)awakeFromNib
 {
     self.contentSizeForViewInPopover = CGSizeMake(320.0, 480.0);
@@ -42,6 +67,15 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    int value = [_delegate getSubdivision];
+    subdivisionSlider.value = value;
+    noOfCells.text = [[NSString alloc] initWithFormat:@"%i",20 * (int)pow(4,value)];
+    
+    int *initialGenome = [_delegate getGenome];
+    for(int i=0; i<12; i++) {
+        if(initialGenome[i] == 2) [genome setTitle:@"s" forSegmentAtIndex:i];
+        else [genome setTitle:[NSString stringWithFormat:@"%i",initialGenome[i]] forSegmentAtIndex:i];
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated
